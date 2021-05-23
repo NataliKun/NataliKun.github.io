@@ -1,0 +1,18 @@
+{
+    "env": {
+        "jest/globals": true,
+        "browser": true,
+        "commonjs": true,
+        "es2021": true
+    },
+    "plugins": ["jest"],
+    "extends": [
+        "standard"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 12
+    },
+    "root": true,
+    "rules": {
+    }
+}
