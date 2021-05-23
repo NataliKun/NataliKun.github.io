@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "npm run lint && jest",
-    "lint": "eslint --config .eslintrc.json src/"
+    "lint": "eslint --config .eslintrc.json src/",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
