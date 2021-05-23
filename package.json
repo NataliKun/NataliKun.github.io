@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
-    
+    "test": "npm run lint && jest",
+    "lint": "eslint --config .eslintrc.json src/"
   },
   "repository": {
     "type": "git",
