@@ -1,0 +1,1 @@
+!function(){var n={770:function(n){function o(){new ymaps.Map("map",{center:[55.76,37.64],zoom:7})}n.exports={map:function(){ymaps.ready(o)}}},229:function(n){n.exports={one:function(){return 1}}}},o={};function t(r){var e=o[r];if(void 0!==e)return e.exports;var p=o[r]={exports:{}};return n[r](p,p.exports,t),p.exports}!function(){const n=t(229),o=t(770);n.a(),o.map()}()}();
