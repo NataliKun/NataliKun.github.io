@@ -1,4 +1,4 @@
-function one(){
-    return 1
+function one () {
+  return 1
 }
-module.exports = one;
+module.exports = one

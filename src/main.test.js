@@ -1,5 +1,5 @@
-const one = require('./main');
+const one = require('./main')
 
 test('return one', () => {
-  expect(one()).toBe(1);
-});
+  expect(one()).toBe(1)
+})
