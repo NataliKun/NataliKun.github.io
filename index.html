@@ -3,14 +3,27 @@
   <head>
     <meta charset="utf-8" />
     <title> </title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://api-maps.yandex.ru/2.1/?apikey=13d8f581-6205-41f5-a852-1df7a0cc5cf8&lang=ru_RU" type="text/javascript">
     </script>
   </head>
+  
   <body>
-      <p>
-          размер не имеет значения
+    
+    
+    <div id='weather' >
+      <p id='City'> </p>
+      <p id='temperature'> </p>
+      <p id="icon"></p>
+    </div>
+    
+    <div id='history'>
+      <input id="input" type="text" name='City'/> 
+      <button id= "button"> Погода </button>
+      <p id="list">
       </p>
-      <div id="map" style="width: 600px; height: 400px"></div>
+    </div>
+    <div id="map" style="width: 400px; height: 400px"></div>
 
     <script src="dist/index.js"></script>
   </body>
