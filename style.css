@@ -1,0 +1,27 @@
+
+#history {
+    display: inline-block;
+    overflow: auto;
+    float: right;
+    margin: 3px 3px  3px  3px;
+  
+  min-height: 2em;
+  background-color: rgb(128, 177, 223);
+  padding: 1px 3px 1px 5px;
+}
+
+#weather {
+    display: inline-block;
+    margin-top: 0em;
+  max-width: 15em; 
+  min-height: 2em;
+  margin-left: 0;
+  padding: 1px 3px 1px 5px;
+}  
+.img{
+    margin-left: 30;
+}
+#map{
+  margin-top: 2em;
+
+}
