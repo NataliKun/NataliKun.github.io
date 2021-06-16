@@ -2,9 +2,11 @@ const weather = require('./weather')
 
 const button = document.querySelector('#button')
 const input = document.querySelector('#input')
+
 let arrInput = []
 
 button.addEventListener('click', click)
+
 
 emptyList()
 
@@ -13,6 +15,7 @@ function click () {
   createList()
   weather.weatherHistory(input.value)
 }
+
 
 function listnerInput (cityNameInput) { //  input добавляе в localStorage
   arrInput.push(cityNameInput.value)
@@ -39,6 +42,7 @@ function createList () { // заполнение списка
   for (let i = 0; i < arrInput.length; i++) {
     const p2 = document.createElement('p')
     p2.append(arrInput[i])
+    p2.onclick = () => {weather.weatherHistory(arrInput[i])}
     p.append(p2)
   }
   document.querySelector('#list').replaceWith(p)
