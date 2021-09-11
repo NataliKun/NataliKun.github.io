@@ -5,16 +5,18 @@ function locationName () {
     .then((data) => {
       return data.region
     })
+    .catch(() => { alert('Не удалось установить местоположение') })
 }
 
-async function locationCoords () {
+/* async function locationCoords () {
   const response = await fetch('https://get.geojs.io/v1/ip/geo.json')
   const data = await response.json()
 
   return [+data.latitude, +data.longitude]
 }
+*/
 
 module.exports = {
-  locationName: locationName,
-  locationCoords: locationCoords
+  locationName: locationName
+  // locationCoords: locationCoords
 }
