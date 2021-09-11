@@ -7,6 +7,7 @@
     "test": "npm run lint && jest",
     "coverage": "jest --coverage  --collectCoverageFrom=src/**/*.{js,jsx}",
     "lint": "eslint --config .eslintrc.json src/",
+    "fix": "eslint --fix --config .eslintrc.json src/",
     "build": "webpack --mode production",
     "dev": "webpack --mode development"
   },
