@@ -19,11 +19,13 @@ test('emptyList создание списка', () => {
   expect(emptyList()).toEqual([])
 })
 
-/* function emptyList () { // создание списка из localStorage
-    try {
-      return JSON.parse(localStorage.getItem('cityNameInput')) || []
-    } catch (e) {
-      return []
+test('CreateList ', () => {
+  const replaceWith = jest.fn(() => {})
+  window.document.querySelector = jest.fn(() => {
+    return {
+      replaceWith: replaceWith
     }
-  }
-  */
+  })
+  list.createList([])
+  expect(replaceWith).toBeCalled()
+})

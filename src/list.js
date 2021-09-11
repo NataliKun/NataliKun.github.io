@@ -6,12 +6,12 @@ let arrInput = []
 function onStart () {
   document.querySelector('#button').addEventListener('click', click)
   arrInput = emptyList()
-  createList()
+  createList(arrInput)
 }
 
 function click () {
   listnerInput(input, arrInput)
-  createList()
+  createList(arrInput)
   weather.weatherHistory(input.value)
 }
 
@@ -32,13 +32,13 @@ function emptyList () { // создание списка из localStorage
   }
 }
 
-function createList () { // заполнение списка
+function createList (arr3) { // заполнение списка
   const p = document.createElement('p')
   p.id = 'list'
-  for (let i = 0; i < arrInput.length; i++) {
+  for (let i = 0; i < arr3.length; i++) {
     const p2 = document.createElement('p')
-    p2.append(arrInput[i])
-    p2.onclick = () => { weather.weatherHistory(arrInput[i]) }
+    p2.append(arr3[i])
+    p2.onclick = () => { weather.weatherHistory(arr3[i]) }
     p.append(p2)
   }
   document.querySelector('#list').replaceWith(p)
